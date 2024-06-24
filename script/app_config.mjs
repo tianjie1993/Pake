@@ -50,12 +50,12 @@ const variables = {
   },
   windows: {
     configFilePath: 'src-tauri/tauri.windows.conf.json',
-    iconPath: `src-tauri/png/${process.env.NAME}_32.ico`,
-    defaultPath: 'src-tauri/png/icon_32.ico',
-    hdIconPath: `src-tauri/png/${process.env.NAME}_256.ico`,
-    hdDefaultPath: 'src-tauri/png/icon_256.ico',
-    icon: [`png/${process.env.NAME}_256.ico`, `png/${process.env.NAME}_32.ico`],
-    resources: [`png/${process.env.NAME}_32.ico`],
+    iconPath: `src-tauri/png/clink_32.ico`,
+    defaultPath: 'src-tauri/png/clink_32.ico',
+    hdIconPath: `src-tauri/png/clink_256.ico`,
+    hdDefaultPath: 'src-tauri/png/clink_256.ico',
+    icon: [`png/clink_256.ico`, `png/clink_32.ico`],
+    resources: [`png/clink_32.ico`],
   },
 };
 
