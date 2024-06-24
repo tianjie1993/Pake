@@ -5,19 +5,19 @@ on:
       name:
         description: 'app name'
         required: true
-        default: 'twitter'
+        default: 'itboy'
       title:
         description: 'app title'
         required: true
-        default: 'Twitter'
+        default: 'itboy'
       name_zh:
         description: 'app name in Chinese'
         required: true
-        default: '推特'
+        default: 'IT小哥'
       url:
         description: 'app url'
         required: true
-        default: 'https://twitter.com/'
+        default: 'https://abichatbot.ab-inbev.cn/ad/login'
   workflow_call:
     inputs:
       name:
