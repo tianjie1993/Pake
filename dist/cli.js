@@ -175,7 +175,7 @@ var tauri$3 = {
 		active: false
 	},
 	systemTray: {
-		iconPath: "png/icon_512.png",
+		iconPath: "png/itboy_512.png",
 		iconAsTemplate: true
 	},
 	allowlist: {
@@ -561,13 +561,13 @@ async function mergeConfig(url, options, tauriConf) {
         win32: {
             fileExt: '.ico',
             path: `png/${name.toLowerCase()}_256.ico`,
-            defaultIcon: 'png/icon_256.ico',
+            defaultIcon: 'png/itboy_256.ico',
             message: 'Windows icon must be .ico and 256x256px.',
         },
         linux: {
             fileExt: '.png',
             path: `png/${name.toLowerCase()}_512.png`,
-            defaultIcon: 'png/icon_512.png',
+            defaultIcon: 'png/itboy_512.png',
             message: 'Linux icon must be .png and 512x512px.',
         },
         darwin: {
@@ -604,7 +604,7 @@ async function mergeConfig(url, options, tauriConf) {
         tauriConf.tauri.bundle.icon = [iconInfo.defaultIcon];
     }
     // Set tray icon path.
-    let trayIconPath = platform === 'darwin' ? 'png/icon_512.png' : tauriConf.tauri.bundle.icon[0];
+    let trayIconPath = platform === 'darwin' ? 'png/itboy_512.png' : tauriConf.tauri.bundle.icon[0];
     if (systemTrayIcon.length > 0) {
         try {
             await fsExtra.pathExists(systemTrayIcon);
@@ -858,9 +858,9 @@ async function handleIcon(options) {
     else {
         logger.warn('✼ No icon given, default in use. For a custom icon, use --icon option.');
         const iconPath = IS_WIN
-            ? 'src-tauri/png/icon_256.ico'
+            ? 'src-tauri/png/itboy_256.ico'
             : IS_LINUX
-                ? 'src-tauri/png/icon_512.png'
+                ? 'src-tauri/png/itboy_512.png'
                 : 'src-tauri/icons/icon.icns';
         return path.join(npmDirectory, iconPath);
     }

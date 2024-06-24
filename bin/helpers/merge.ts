@@ -122,13 +122,13 @@ export async function mergeConfig(url: string, options: PakeAppOptions, tauriCon
     win32: {
       fileExt: '.ico',
       path: `png/${name.toLowerCase()}_256.ico`,
-      defaultIcon: 'png/icon_256.ico',
+      defaultIcon: 'png/itboy_256.ico',
       message: 'Windows icon must be .ico and 256x256px.',
     },
     linux: {
       fileExt: '.png',
       path: `png/${name.toLowerCase()}_512.png`,
-      defaultIcon: 'png/icon_512.png',
+      defaultIcon: 'png/itboy_512.png',
       message: 'Linux icon must be .png and 512x512px.',
     },
     darwin: {
@@ -165,7 +165,7 @@ export async function mergeConfig(url: string, options: PakeAppOptions, tauriCon
   }
 
   // Set tray icon path.
-  let trayIconPath = platform === 'darwin' ? 'png/icon_512.png' : tauriConf.tauri.bundle.icon[0];
+  let trayIconPath = platform === 'darwin' ? 'png/itboy_512.png' : tauriConf.tauri.bundle.icon[0];
   if (systemTrayIcon.length > 0) {
     try {
       await fsExtra.pathExists(systemTrayIcon);

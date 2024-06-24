@@ -33,7 +33,7 @@ const variables = {
     configFilePath: 'src-tauri/tauri.linux.conf.json',
     iconPath: `src-tauri/png/${process.env.NAME}_512.png`,
     productName: `com-pake-${process.env.NAME}`,
-    defaultIconPath: 'src-tauri/png/icon_512.png',
+    defaultIconPath: 'src-tauri/png/itboy_512.png',
     icon: [`png/${process.env.NAME}_512.png`],
     desktopEntry,
     desktopEntryPath: `src-tauri/assets/com-pake-${process.env.NAME}.desktop`,
